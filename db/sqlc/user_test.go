@@ -4,15 +4,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/rinvyssondev/finances/Util"
+	"github.com/rinvyssondev/finances/util"
 	"github.com/stretchr/testify/require"
 )
 
 func createRandomUser(t *testing.T) User {
 	arg := CreateUserParams{
-		Username: Util.RandomString(6),
-		Password: Util.RandomString(12),
-		Email:    Util.RandomEmail(10),
+		Username: util.RandomString(6),
+		Password: util.RandomString(12),
+		Email:    util.RandomEmail(10),
 	}
 
 	user, err := testQueries.CreateUser(context.Background(), arg)
