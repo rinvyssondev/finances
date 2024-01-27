@@ -1,4 +1,4 @@
-package Util
+package util
 
 import (
 	"fmt"
@@ -20,5 +20,5 @@ func RandomString(number int) string {
 }
 
 func RandomEmail(number int) string {
-	return fmt.Sprintf("%s@gmail.com", RandomString(6))
+	return fmt.Sprintf("%s@gmail.com", RandomString(number))
 }
